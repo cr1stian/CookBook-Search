@@ -31,15 +31,14 @@ function recipesBox(data){
     let link = `${data.results[i].href}`;
     let ingredients = `${data.results[i].ingredients}`;
     let thumbnail = `${data.results[i].thumbnail}`;
-  
 
-    searchWord += `<div>
+
+    searchWord += `<div class = "w3-card">
                     <img src="${thumbnail}"/>
-                    <h2>${title}</h2>
+                    <h3>${title}</h3>
                     <p>${ingredients}</p>
-
                     </div>`
-
+console.log(thumbnail)
   };
   resultsBox.innerHTML = searchWord
 };
